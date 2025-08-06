@@ -2,50 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced eBay Fee Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Fiesta - Authentic Mexican Cuisine</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Advanced eBay Fee Calculator</h1>
+  <header class="hero">
+    <h1>Welcome to La Fiesta</h1>
+    <p>Experience the vibrant flavors of Mexico.</p>
+  </header>
 
-    <div class="form-group">
-      <label for="salePrice">Sale Price ($):</label>
-      <input type="number" id="salePrice" placeholder="Enter sale price" />
-    </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      La Fiesta is a family owned restaurant bringing the taste of Mexico to
+      your table. Our chefs use traditional recipes and fresh ingredients to
+      create dishes that celebrate our heritage.
+    </p>
+  </section>
 
-    <div class="form-group">
-      <label for="shippingCharged">Shipping Charged to Buyer ($):</label>
-      <input type="number" id="shippingCharged" placeholder="Enter shipping charged" />
-    </div>
+  <section id="dishes">
+    <h2>Featured Dishes</h2>
+    <ul class="menu-list">
+      <li>
+        <h3>Tacos al Pastor</h3>
+        <p>Marinated pork served on warm corn tortillas with pineapple.</p>
+      </li>
+      <li>
+        <h3>Chicken Enchiladas</h3>
+        <p>Tortillas stuffed with tender chicken and topped with salsa verde.</p>
+      </li>
+    </ul>
+  </section>
 
-    <div class="form-group">
-      <label for="shippingCost">Your Shipping Cost ($):</label>
-      <input type="number" id="shippingCost" placeholder="Enter actual shipping cost" />
-    </div>
+  <section id="drinks">
+    <h2>Drinks</h2>
+    <ul class="menu-list">
+      <li>
+        <h3>Horchata</h3>
+        <p>Creamy cinnamon rice milk served chilled.</p>
+      </li>
+      <li>
+        <h3>Margarita</h3>
+        <p>Classic tequila cocktail with a hint of lime.</p>
+      </li>
+    </ul>
+  </section>
 
-    <div class="form-group">
-      <label for="itemCost">Cost of Goods Sold (Item Cost) ($):</label>
-      <input type="number" id="itemCost" placeholder="What you paid for the item" />
-    </div>
-
-    <div class="form-group">
-      <label for="ebayFeePercent">eBay Final Value Fee (%):</label>
-      <input type="number" id="ebayFeePercent" value="13.25" step="0.01" />
-    </div>
-
-    <div class="form-group">
-      <label for="fixedFee">Fixed Fee per Order ($):</label>
-      <input type="number" id="fixedFee" value="0.30" step="0.01" />
-    </div>
-
-    <button onclick="calculateAdvancedProfit()">Calculate Profit</button>
-    <button onclick="resetCalculator()" class="reset">Reset</button>
-
-    <div id="result"></div>
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 La Fiesta Mexican Restaurant</p>
+  </footer>
 </body>
 </html>
